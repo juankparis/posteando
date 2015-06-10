@@ -13,7 +13,7 @@ $(function(){
 		var lon  = posicion.coords.longitude;
 		var mapa = new Image();
 		//quitando maptype=hybrid sale en mapa de google maps
-		mapa.src = "http://maps.googleapis.com/maps/api/staticmap?maptype=hybrid&zoom=15&size=320x280&sensor=false&center="+lat+","+lon;
+		mapa.src = "http://maps.googleapis.com/maps/api/staticmap?maptype=hybrid&zoom=15&size=338x270&sensor=false&center="+lat+","+lon;
 		$('#geo').append(mapa);
 
 		//obtenerGeoInformacion(lat, lon);
