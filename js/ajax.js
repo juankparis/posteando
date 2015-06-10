@@ -8,8 +8,17 @@ $(function(){
 			//crear una caja en index con id="logo" para respetar el contenido el footer 
 	$("footer #logo").load("logo_ajax.html");
 
-	$.get("js/usuario.json", function(info){
-		console.log(info);
-	});
+					// otra forma de ingresar por ajax con peticiones a bd
+	// $.get("../js/usuario.json", function(info){
+	// 	var avatar = new Image();
+	// 	avatar.src = info.avatar;
+	// 	avatar.title=info.nombre+" "+info.apellido;
+	// });
+
+	// $("#avatar").append(avatar);
 
 });
+
+function obtenerGeoInformacion(lat, lon){
+	console.log(lat+" "+lon);
+}
