@@ -1,6 +1,6 @@
 $(function(){
 	var geo = navigator.geolocation;
-	console.log(geo);
+	//console.log(geo);
 	var opciones = {};
 
 	function geo_error() {
