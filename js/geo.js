@@ -15,6 +15,7 @@ $(function(){
 		//quitando maptype=hybrid sale en mapa de google maps
 		mapa.src = "http://maps.googleapis.com/maps/api/staticmap?maptype=hybrid&zoom=15&size=338x270&sensor=false&center="+lat+","+lon;
 		$('#geo').append(mapa);
+		
 		//para ajax.js
 		obtenerGeoInformacion(lat, lon);
 	}
