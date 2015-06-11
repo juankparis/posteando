@@ -47,7 +47,7 @@ function procesarGeoInfo(datos) {
 	//para la llamada a obtenerClima 
 	var woeid  = res.woeid;
 
-	$('#geo')
+	$('#geoinfo')
 		.prepend('<p><strong>'+barrio+'</strong><br/>'+ciudad+', '+pais+'</p>');
 
 	//llamado a la function 
