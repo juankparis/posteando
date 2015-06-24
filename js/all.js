@@ -20,11 +20,15 @@ $(document).on("ready", function inicio () {
 		//si la variable existe ponga lo de sessionS.. en 
 		$titulo.val(sessionStorage.getItem('titulo'));
 		$url.val(sessionStorage.getItem('url'));
+		$tag.val(sessionStorage.getItem('tag'));
+		$autor.val(sessionStorage.getItem('autor'));
 	}
 
 	var id = setInterval(function(){
 		sessionStorage.setItem('titulo', $titulo.val());
 		sessionStorage.setItem('url', $url.val());
+		sessionStorage.setItem('tag', $tag.val());
+		sessionStorage.setItem('autor', $autor.val());
 	}, 1000);
 });
 
