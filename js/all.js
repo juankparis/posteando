@@ -2,6 +2,8 @@
 var $form = $("#formulario"),
 	$titulo= $("#titulo"),
 	$url = $("#url"),
+	$tag = $("#tag"),
+	$autor = $("#autor"),
 	$boton = $("#mostrar-form"),
 	$list = $("#contenido"),
 	$post = $(".item").first(),
@@ -41,11 +43,19 @@ function agregarpost () {
 	//e.stopPropagation();
 	var url = $url.val(),
 		titulo = $titulo.val(),
+		tag = $tag.val(),
+		autor = $autor.val(),
 		$clone = $post.clone();
 	
 	$clone.find(".titulo_item a")
 		.text(titulo)
 		.attr("href", url);
+
+	$clone.find(".datos_item a")
+		.text(tag)
+		.attr("href", url);
+
+	$clone.find(".autor_item a").text(autor).attr("href", url);
 	// esconder clone como en css
 	$clone.hide();
 	// agregacion
@@ -57,5 +67,7 @@ function agregarpost () {
 	//borra o setea los campos
 	$titulo.val('');
 	$url.val('');
+	$tag.val('');
+	$autor.val('');
 	return false;
 }
