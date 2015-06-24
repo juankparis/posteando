@@ -1,4 +1,3 @@
-
 var $form = $("#formulario"),
 	$titulo= $("#titulo"),
 	$url = $("#url"),
@@ -51,14 +50,8 @@ function agregarpost () {
 		autor = $autor.val(),
 		$clone = $post.clone();
 	
-	$clone.find(".titulo_item a")
-		.text(titulo)
-		.attr("href", url);
-
-	$clone.find(".datos_item a")
-		.text(tag)
-		.attr("href", url);
-
+	$clone.find(".titulo_item a").text(titulo).attr("href", url);
+	$clone.find(".datos_item a").text(tag).attr("href", url);
 	$clone.find(".autor_item a").text(autor).attr("href", url);
 	// esconder clone como en css
 	$clone.hide();
