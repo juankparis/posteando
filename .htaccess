@@ -1,0 +1,15 @@
+# Cache Headers
+<ifmodule mod_headers.c>
+  # Cache specified files for 31 days
+  <filesmatch "\.(ico|flv|jpg|jpeg|png|gif|css|swf)$">
+  Header set Cache-Control "max-age=2678400, public"
+  </filesmatch>
+  # Don't cache HTML
+  <filesmatch "\.(html|htm)$">
+  Header set Cache-Control "max-age=0, private, must-revalidate"
+  </filesmatch>
+  # Cache Javascripts for 31 days
+  <filesmatch "\.(js)$">
+  Header set Cache-Control "max-age=2678400, private"
+  </filesmatch>
+</ifmodule>
