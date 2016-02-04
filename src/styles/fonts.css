@@ -1,0 +1,50 @@
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);*/
+
+@font-face {
+	font-family: 'juan';
+	src:url('./dist/fonts/juan.eot?4spljs');
+	src:url('./dist/fonts/juan.eot?#iefix4spljs') format('embedded-opentype'),
+		url('./dist/fonts/juan.woff?4spljs') format('woff'),
+		url('./dist/fonts/juan.ttf?4spljs') format('truetype'),
+		url('./dist/fonts/juan.svg?4spljs#juan') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'juan';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*.icon-pen*/
+#mostrar-form:before {
+	content: "\e908";
+	margin-right: 0.8em;
+}
+
+.icon-circle-up:before {
+	content: "\ea41";
+	color: #0DA921;	
+}
+
+.icon-circle-down:before {
+	content: "\ea43";
+	color: #D82732;
+}
+
+.icon-star:before {
+	content: "\f005";
+	color: #F6A615;
+	margin-right: 0.2em;
+	position: relative;
+	top: 0.2em;
+}

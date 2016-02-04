@@ -1,0 +1,260 @@
+@import "./normalize.styl"
+@import "./fonts.css"
+
+a{
+	color: #22BCE0;
+}
+aside{
+	background: white;
+	box-shadow: rgba(0,0,0,0.5) 1px 1px 25px;
+	display: none;
+	padding-bottom: 0.2em;
+	margin: 0 auto;
+	max-width: 400px;
+	text-align: center;
+	overflow: hidden;
+}
+aside #clima{
+	color: rgba(38, 188, 224, 1);
+}
+aside #geoinfo{
+	color: #AAA;
+}
+aside #clima,
+aside #geoinfo{
+	display: inline-block;
+	padding-right: 1em;
+	text-align: left;
+}
+aside #geo{
+	border-top: 4px solid #22BCE0;
+}
+aside h3{
+	background: #22BCE0;
+	box-shadow: rgba(0,0,0,0.5) 0 1px 25px;
+	color: white;
+	font-style: italic;
+	padding: 0.5em 0 0.5em 0;
+	margin: 1em 0.5em;
+	text-align: center;
+	text-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+
+}
+aside video,
+aside audio{
+	box-shadow: rgba(0,0,0,0.5) 0 1px 25px;
+	margin-left: 2%;
+	width: 96%;
+}
+body{
+	background: #EEEEEE;
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+}
+footer{
+	background: #22BCE0;
+	color: rgba(255,225,255,0.7);
+	text-align: center;
+	padding: 1em;
+	position: relative;
+}
+footer p:first-child:before{
+	content: "- ";
+}
+footer p:first-child:after{
+	content: " -";
+}
+footer p:first-child{
+	margin-bottom: 0;
+}
+footer p:last-child{
+	margin-top: 0;
+}
+header{
+	background: #343B54;
+	color: white;
+	overflow: hidden;
+	padding: 0.5em;
+	position: relative;
+}
+header figure {
+	margin: 0;
+	float: left;
+}
+header h1{
+	font-size: 1.2em;
+	font-family: 'Oleo Script', cursive;
+	font-weight: normal;
+	margin: 0.2em 70px 0 0;
+}
+header #avatar{
+	margin: 0.8em 0.5em 0 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+header #avatar img{
+	border-radius: 50%;
+	height: 55px;
+	width: 55px;
+}
+header #logo img{
+	border-right: 1px solid white;
+	margin-right: 0.5em;
+	padding-right: 0.5em;
+	width: 52px;
+}
+nav{
+	background: #22E0CA;
+	padding: 0.3em 7.4em 0.3em 0;
+	position: relative;
+}
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul #pulicar_nav{
+	position: absolute;
+	top: 0.4em;
+	right: 0.5em;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+}
+nav ul #pulicar_nav a{
+	background: #22BCE0;
+	border-radius: 0.4em;
+	font-style: italic;
+	padding: 0.8em 0.7em;
+}
+nav ul #pulicar_nav a:hover:before{
+	font-size:1.2em;
+}
+nav ul li{
+	display: inline-block;
+}
+nav ul li a{
+	color: white;
+	padding:0.3em 0.2em;
+	text-decoration: none;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	-webkit-transition: 0.3s;
+}
+nav ul li a:hover{
+	background: #22BCE0;	
+}
+#contenido{
+	margin: 1em;
+}
+#contenido .item{
+	background: white;
+	border-bottom: 3px solid #22BCE0;
+	box-shadow: rgba(0,0,0,0.5) 0 1px 25px;
+	margin-bottom: 2em;
+	padding: 0.1em 0 1em 0;
+	position: relative;
+}
+#contenido .item .autor_item{
+	color: #AAA;
+}
+#contenido .item .datos_item{
+	text-align: right;
+}
+#contenido .item .datos_item .fecha_item{
+	color: #AAA;
+	padding-right: 0.5em;
+}
+#contenido .item .datos_item .tag_item{
+	background: #2274E0;
+	border-radius: 0.4em;
+	box-shadow: rgba(0,0,0,0.5) 3px 3px 30px 2px;
+	color: white;
+	float: left;
+	padding: 0.3em 0.5em;
+	text-decoration:none;
+}
+#contenido .item .imagen_item{
+	float: left;
+	margin:1.2em 1em 0 0;
+}
+#contenido .item img{
+	border-radius: 0.3em;
+	margin-left: 0.5em;
+	width: 96px;
+}
+#contenido .item .titulo_item{
+	font-size: 1.2em;
+	font-style: italic;
+}
+#contenido .item .titulo_item a{
+	text-decoration: none;
+	margin-top: 0.5em;
+}
+#contenido .item .votacion{
+	background: white;
+	border-radius: 0 0 0.4em 0.4em;
+	box-shadow: rgba(0,0,0,0.5) 3px 3px 30px 2px;
+	left: 5%;
+	margin-top: 3px;
+	padding: 0.2em 0.5em;
+	position: absolute;
+	top: 100%;
+	width: 85%;
+}
+#contenido .item .votacion a{
+	text-decoration: none;
+}
+#contenido .item .votacion .comentarios_item,
+#contenido .item .votacion .guardar_item{
+	float: right;
+}
+.formulario{
+	display: none;
+	padding: 2em;
+	text-align: center;
+}
+.formulario input{
+	border: 1px solid #CCC;
+	border-radius: 0.4em;
+	display: block;
+	margin: 0.5em auto;
+	padding: 0.5em 0.8em;
+}
+.formulario .boton{
+	background: #22BCE0;
+	border-radius: 0.4em;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+	color: white;
+	font-style: italic;
+	padding: 0.5em 0.8em;
+	margin-top: 1.5em;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+}
+@media screen and (min-width: 800px){
+	#contenido{
+		overflow: hidden;
+	}
+	#contenido .item{
+		float:left;
+		margin-right: 1%;
+		margin-left: 1%;
+		width: 48%;
+	}
+}
+@media screen and (min-width: 1000px){
+	aside{
+		display: block;
+		float: right;
+		margin-right: 0.5em;
+		width: 25%;
+	}
+	aside{
+		margin: 1em 0.5em 0 0.5em;
+	}
+}
+@media screen and (max-width: 451px){
+	nav ul #pulicar_nav{
+		position: absolute;
+		top: 1em;
+		right: 0.5em;
+	}
+}
